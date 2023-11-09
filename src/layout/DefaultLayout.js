@@ -16,7 +16,7 @@ const DefaultLayout = (props) => {
                 <div id='contents'>
                     <AppContent {...props} />
                 </div>
-                <AppFooter />
+                <AppFooter {...props}/>
             </div>
         </div>
     )

@@ -12,7 +12,7 @@ const TimeLine = () => {
                     <Timeline.Time>February 2022</Timeline.Time>
                     <Timeline.Title>
                         Application UI code in Tailwind CSS
-                        <span class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ml-3">Latest</span>
+                        <span className="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ml-3">Latest</span>
                     </Timeline.Title>
                     <Timeline.Body>
                         Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order

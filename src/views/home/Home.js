@@ -2,13 +2,14 @@ import React from 'react';
 
 import { Button, Rating  } from 'flowbite-react';
 import TimeLine from './TimeLine';
+import Banner from './Banner';
 
 const Home = () => {
     return (
-        <div>
-            <section class="bg-center bg-no-repeat bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-gray-700 bg-blend-multiply">
-                <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
-                    <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
+        <div className='dark:bg-gray-800'>
+            <section className="bg-center bg-no-repeat bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-gray-700 bg-blend-multiply">
+                <div className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+                    <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
                         <figure>
                             <Rating size="md">
                                 <Rating.Star />
@@ -24,10 +25,11 @@ const Home = () => {
             </section>
 
             <div>
-            <Button className="bg-red-500 hover:bg-red-600">Click me</Button>
+                <Banner />
+                
+                <Button className="bg-red-500 hover:bg-red-600">Click me</Button>
 
-            
-            <TimeLine />
+                <TimeLine />
             </div>
            
 

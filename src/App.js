@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import '../src/assets/css/index.css';
 import '../src/assets/css/common.css';
 
-import { DarkThemeToggle, Flowbite } from 'flowbite-react';
+import { DarkThemeToggle, Flowbite, } from 'flowbite-react';
 const DefaultLayout = React.lazy(() => import('./layout/DefaultLayout'))      // Main Containers
 
 
@@ -21,7 +21,7 @@ function App() {
               <Route path="/" name="Home" render={(props) =>{
                   return (
                     <Flowbite theme={{ dark: initialMode }}>
-                      <DefaultLayout {...props} DarkThemeToggle={DarkThemeToggle}/> 
+                      <DefaultLayout {...props} DarkThemeToggle={DarkThemeToggle} isDark={initialMode} /> 
                     </Flowbite>
                   )
                 }}

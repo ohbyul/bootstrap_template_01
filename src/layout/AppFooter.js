@@ -3,11 +3,12 @@ import { Footer } from 'flowbite-react';
 import { BsDribbble, BsFacebook, BsGithub, BsInstagram, BsTwitter } from 'react-icons/bs';
 
 
-const AppFooter = () => {
+const AppFooter = (props) => {
+   const {isDark} = props
 
    return (
-      <footer class="fixed bottom-0 left-0 z-20 w-full p-4 border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
-         <div class="mx-auto w-full p-2 py-6 lg:py-8">
+      <footer className="bg-white fixed bottom-0 left-0 z-20 w-full p-4 border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
+         <div className="mx-auto w-full p-2 py-6 lg:py-8">
             
             <div className="w-full sm:flex sm:items-center sm:justify-between">
                <Footer.Copyright href="#" by="byeol.oh" year={2023} />
